@@ -142,7 +142,7 @@ class SIPUAHelper extends EventManager {
     _settings.instance_id = uiSettings.instanceId;
     _settings.session_timers_refresh_method =
         uaSettings.sessionTimersRefreshMethod;
-    _settings.instance_id = uiSettings.instanceId;
+    _settings.instance_id = uaSettings.instanceId;
 
     try {
       _ua = UA(_settings);
