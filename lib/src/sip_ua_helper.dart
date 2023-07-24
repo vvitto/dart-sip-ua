@@ -139,6 +139,7 @@ class SIPUAHelper extends EventManager {
     _settings.dtmf_mode = uaSettings.dtmfMode;
     _settings.session_timers = uaSettings.sessionTimers;
     _settings.ice_gathering_timeout = uaSettings.iceGatheringTimeout;
+    _settings.instance_id = uiSettings.instanceId;
     _settings.session_timers_refresh_method =
         uaSettings.sessionTimersRefreshMethod;
 
@@ -709,6 +710,7 @@ class UaSettings {
   String? password;
   String? ha1;
   String? displayName;
+  String? instanceId;
 
   /// DTMF mode, in band (rfc2833) or out of band (sip info)
   DtmfMode dtmfMode = DtmfMode.INFO;
